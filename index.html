@@ -4,15 +4,9 @@
 <head>
     <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="[YOUR PORTFOLIO DESCRIPTION]"
-    >
+    <meta name="description" content="[YOUR PORTFOLIO DESCRIPTION]">
 
     <title>[Krishang Sarkar] | Portfolio</title>
 
@@ -22,8 +16,7 @@
 
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+        rel="stylesheet">
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
@@ -38,24 +31,18 @@
 
     <header class="site-header">
 
-        <button
-            class="menu-toggle"
-            aria-label="Toggle navigation"
-            aria-expanded="false"
-        >
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
             <span></span>
             <span></span>
         </button>
 
-        <nav
-            class="nav-links"
-            aria-label="Main navigation"
-        >
+        <nav class="nav-links" aria-label="Main navigation">
+            <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
-            <a href="#achievements">Achievements</a>
+            <!-- <a href="#achievements">Achievements</a> -->
             <a href="#contact">Contact</a>
         </nav>
 
@@ -63,68 +50,80 @@
 
 
     <main>
-
-
-        <!-- ========================================
-             ABOUT
-        ========================================= -->
-
-        <section
-            id="about"
-            class="section-wrap about-section"
-        >
+        <section id="home" class="section-wrap home">
 
             <div class="section-label">
                 <span>01</span>
-                About
+                Home
             </div>
 
+            <div class="home-content">
+
+                <p class="home-greeting">Hi, I'm</p>
+
+                <h1 class="home-name">Krishang Sarkar</h1>
+
+                <div class="home-title">
+                    <span>Computer Engineering Student</span>
+                </div>
+
+                <p class="home-description">
+                    Computer Engineering student interested in
+                    <span class="highlight">embedded systems</span>,
+                    <span class="highlight">software engineering</span>, and
+                    <span class="highlight">Analog electronics</span>.
+                </p>
+
+                <div class="home-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <!-- ========================================
+     ABOUT
+========================================= -->
+
+        <section id="about" class="section-wrap about-section">
+
+            <div class="section-label">
+                <span>02</span>
+                About
+            </div>
 
             <div class="about-grid">
 
                 <div class="about-heading">
-
-                    <p class="eyebrow">
-                        [SHORT INTRO / TITLE]
-                    </p>
-
+                 <div class="about-pic">
+                    <img src="profile.png" alt="Profile">
+                    </div>
                     <h1>
-                        [Krishang Sarkar]
+                      
                     </h1>
 
-                    <p class="about-intro">
-                        [SHORT INTRODUCTION]
+                    <p class=" about-intro">
                     </p>
 
                 </div>
 
-
                 <div class="about-body">
 
                     <p>
-                        [ABOUT YOURSELF]
+                        I'm a second-year Computer Engineering student interested in
+                        how hardware and software come together. I enjoy building
+                        projects across embedded systems, software, electronics, and
+                        signal processing while exploring different areas of engineering.
                     </p>
 
                     <p>
-                        [INTERESTS / GOALS / WHAT YOU BUILD]
+                        When I'm not studying or building projects, you'll usually find
+                        me running, travelling, or documenting my life.
                     </p>
-
-
-                    <div class="about-links">
-
-                        <a href="[RESUME LINK]">
-                            Resume
-                        </a>
-
-                        <a href="[GITHUB LINK]">
-                            GitHub
-                        </a>
-
-                        <a href="[LINKEDIN LINK]">
-                            LinkedIn
-                        </a>
-
-                    </div>
 
                 </div>
 
@@ -133,77 +132,202 @@
         </section>
 
 
-
         <!-- ========================================
-             SKILLS
-        ========================================= -->
+     SKILLS
+========================================= -->
 
-        <section
-            id="skills"
-            class="section-wrap skills-section"
-        >
+        <section id="skills" class="section-wrap skills-section">
 
             <div class="section-label">
-                <span>02</span>
+                <span>03</span>
                 Skills
             </div>
 
-
             <div class="skills-grid">
 
-
-                <!-- SKILL CATEGORY -->
+                <!-- Languages -->
                 <div class="skill-category">
-
-                    <h3>
-                        [CATEGORY]
-                    </h3>
+                    <h3>Languages</h3>
 
                     <div class="tags">
-                        <span>[SKILL]</span>
-                        <span>[SKILL]</span>
-                        <span>[SKILL]</span>
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                        <span>MATLAB</span>
+                        <span>C#</span>
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                        <span>VHDL</span>
+                        <span>Bash</span>
                     </div>
-
                 </div>
 
 
-                <!-- SKILL CATEGORY -->
+                <!-- Embedded & Hardware -->
                 <div class="skill-category">
-
-                    <h3>
-                        [CATEGORY]
-                    </h3>
+                    <h3>Embedded & Hardware</h3>
 
                     <div class="tags">
-                        <span>[SKILL]</span>
-                        <span>[SKILL]</span>
-                        <span>[SKILL]</span>
+                        <span>ESP32</span>
+                        <span>ESP32-CAM</span>
+                        <span>Raspberry Pi</span>
+                        <span>Raspberry Pi Pico</span>
+                        <span>Arduino</span>
+                        <span>I2C</span>
+                        <span>SPI</span>
+                        <span>UART</span>
+                        <span>GPIO</span>
+                        <span>PWM</span>
+                        <span>ADC</span>
+                        <span>Wi-Fi SoftAP</span>
+                        <span>SMD Soldering</span>
+                        <span>Through-Hole Soldering</span>
                     </div>
-
                 </div>
 
 
-                <!-- SKILL CATEGORY -->
+                <!-- Web & Backend -->
                 <div class="skill-category">
-
-                    <h3>
-                        [CATEGORY]
-                    </h3>
+                    <h3>Web & Backend</h3>
 
                     <div class="tags">
-                        <span>[SKILL]</span>
-                        <span>[SKILL]</span>
-                        <span>[SKILL]</span>
+                        <span>React</span>
+                        <span>Next.js</span>
+                        <span>FastAPI</span>
+                        <span>REST APIs</span>
+                        <span>HTTP</span>
+                        <span>GraphQL</span>
+                        <span>Apollo Client</span>
+                        <span>Faust.js</span>
+                        <span>WordPress</span>
+                        <span>Gutenberg</span>
+                        <span>Headless CMS</span>
                     </div>
-
                 </div>
 
 
-                <!-- Add more categories if needed -->
+                <!-- Signal & Image Processing -->
+                <div class="skill-category">
+                    <h3>Signal & Image Processing</h3>
+
+                    <div class="tags">
+                        <span>FFT</span>
+                        <span>DFT</span>
+                        <span>DCT</span>
+                        <span>Frequency Analysis</span>
+                        <span>Digital Filtering</span>
+                        <span>Interpolation</span>
+                        <span>Compression</span>
+                        <span>Signal Processing</span>
+                        <span>Image Processing</span>
+                    </div>
+                </div>
 
 
-            </div>
+                <!-- Libraries & Frameworks -->
+                <div class="skill-category">
+                    <h3>Libraries & Frameworks</h3>
+
+                    <div class="tags">
+                        <span>NumPy</span>
+                        <span>SciPy</span>
+                        <span>Pandas</span>
+                        <span>Matplotlib</span>
+                        <span>SymPy</span>
+                        <span>React</span>
+                        <span>Next.js</span>
+                        <span>FastAPI</span>
+                        <span>Apollo Client</span>
+                        <span>Faust.js</span>
+                    </div>
+                </div>
+
+
+                <!-- EDA & Simulation -->
+                <div class="skill-category">
+                    <h3>EDA & Simulation</h3>
+
+                    <div class="tags">
+                        <span>LTspice</span>
+                        <span>ngspice</span>
+                        <span>EAGLE</span>
+                        <span>ModelSim</span>
+                        <span>Quartus</span>
+                    </div>
+                </div>
+
+
+                <!-- Developer Tools -->
+                <div class="skill-category">
+                    <h3>Developer Tools</h3>
+
+                    <div class="tags">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>Docker</span>
+                        <span>VS Code</span>
+                        <span>PlatformIO</span>
+                        <span>Arduino IDE</span>
+                        <span>IntelliJ IDEA</span>
+                        <span>PyCharm</span>
+                        <span>npm</span>
+                        <span>Jupyter Notebooks</span>
+                        <span>Jira</span>
+                        <span>Confluence</span>
+                        <span>GraphiQL</span>
+                        <span>LocalWP</span>
+                    </div>
+                </div>
+
+
+                <!-- Lab Equipment -->
+                <div class="skill-category">
+                    <h3>Lab Equipment</h3>
+
+                    <div class="tags">
+                        <span>Oscilloscope</span>
+                        <span>Digital Multimeter</span>
+                        <span>LCR Bridge</span>
+                        <span>DC Power Supply</span>
+                        <span>Breadboarding</span>
+                    </div>
+                </div>
+
+
+                <!-- Platforms & Systems -->
+                <div class="skill-category">
+                    <h3>Platforms & Systems</h3>
+
+                    <div class="tags">
+                        <span>Linux</span>
+                        <span>Linux CLI</span>
+                        <span>SSH</span>
+                        <span>Embedded Systems</span>
+                        <span>HTTP Servers</span>
+                        <span>Hardware/Software Interfacing</span>
+                        < </div>
+                    </div>
+
+
+                    <!-- Architecture & Methods -->
+                    <div class="skill-category">
+                        <h3>Architecture & Methods</h3>
+
+                        <div class="tags">
+                            <span>Real-Time Firmware Architecture</span>
+                            <span>State Machines</span>
+                            <span>Non-Blocking Timing</span>
+                            <span>Headless CMS Architecture</span>
+                            <span>Agile</span>
+                            <span>Scrum</span>
+                            <span>Kanban</span>
+                            <span>Serial Debugging</span>
+                            <span>Component-Level Testing</span>
+                        </div>
+                    </div>
+
+                </div>
 
         </section>
 
@@ -213,13 +337,10 @@
              EXPERIENCE
         ========================================= -->
 
-        <section
-            id="experience"
-            class="section-wrap experience-section"
-        >
+        <section id="experience" class="section-wrap experience-section">
 
             <div class="section-label">
-                <span>03</span>
+                <span>04</span>
                 Experience
             </div>
 
@@ -233,11 +354,11 @@
                     <div class="experience-meta">
 
                         <span class="experience-date">
-                            [DATE]
+                            [Feb-2026]
                         </span>
 
                         <span class="experience-organization">
-                            [ORGANIZATION]
+                            Blueprint
                         </span>
 
                     </div>
@@ -246,27 +367,49 @@
                     <div class="experience-content">
 
                         <h3>
-                            [ROLE]
+                            Software Developer
                         </h3>
 
                         <p>
-                            [SHORT DESCRIPTION]
+                            Developing and maintaining nonprofit web platforms at SFU Blueprint
+                            using modern web technologies and headless CMS architecture.
                         </p>
 
                         <ul>
-                            <li>[WHAT YOU DID]</li>
-                            <li>[WHAT YOU DID]</li>
-                            <li>[RESULT / IMPACT]</li>
+                            <li>
+                                Developed nonprofit web platforms using Next.js, Faust.js,
+                                Apollo Client, GraphQL, and WordPress in a headless CMS architecture.
+                            </li>
+
+                            <li>
+                                Implemented responsive UI components using React, CSS, and
+                                WordPress Gutenberg to improve cross-platform consistency.
+                            </li>
+
+                            <li>
+                                Debugged frontend workflows using LocalWP, analyzed component
+                                behavior, and collaborated through GitHub pull requests and
+                                Agile workflows.
+                            </li>
+
+                            <li>
+                                Built reusable Gutenberg components and evaluated plugin
+                                integrations to improve maintainability of client platforms.
+                            </li>
                         </ul>
 
-
                         <div class="tags">
-                            <span>[TECH / SKILL]</span>
-                            <span>[TECH / SKILL]</span>
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>Faust.js</span>
+                            <span>GraphQL</span>
+                            <span>Apollo Client</span>
+                            <span>WordPress</span>
+                            <span>Gutenberg</span>
+                            <span>GitHub</span>
                         </div>
 
                     </div>
-
                 </article>
 
 
@@ -281,94 +424,51 @@
         </section>
 
 
-
         <!-- ========================================
-             PROJECTS
-        ========================================= -->
+     PROJECTS
+========================================= -->
 
-        <section
-            id="projects"
-            class="section-wrap projects-section"
-        >
+        <section id="projects" class="section-wrap projects-section">
 
             <div class="section-label">
-                <span>04</span>
+                <span>05</span>
                 Projects
             </div>
-
-
-            <div class="section-heading">
-
-                <h2>
-                    [PROJECT SECTION HEADING]
-                </h2>
-
-                <p>
-                    [OPTIONAL PROJECT SECTION DESCRIPTION]
-                </p>
-
-            </div>
-
 
             <div class="projects-grid">
 
 
-                <!-- PROJECT -->
+                <!-- ReelBridge -->
                 <article class="project-card">
-
-
-                    <div class="project-image">
-
-                        <img
-                            src="[IMAGE PATH]"
-                            alt="[IMAGE DESCRIPTION]"
-                        >
-
-                    </div>
-
 
                     <div class="project-content">
 
-                        <span class="project-category">
-                            [CATEGORY]
-                        </span>
+                        <span class="project-category">Full-Stack Software</span>
 
-                        <h3>
-                            [PROJECT NAME]
-                        </h3>
+                        <h3>ReelBridge</h3>
 
-                        <p class="project-description">
-                            [PROJECT DESCRIPTION]
-                        </p>
-
+                        <ul class="project-description">
+                            <li>Built a full-stack application that converts Instagram Reel URLs into downloadable MP4
+                                files for sharing outside Instagram.</li>
+                            <li>Developed a React frontend and FastAPI backend, integrating yt-dlp and FFmpeg for media
+                                retrieval and processing.</li>
+                            <li>Containerized the application with Docker and redesigned the delivery architecture after
+                                identifying platform DM restrictions.</li>
+                        </ul>
 
                         <div class="project-tech">
-
-                            <span>[TECH]</span>
-                            <span>[TECH]</span>
-                            <span>[TECH]</span>
-
+                            <span>FastAPI</span>
+                            <span>React.js</span>
+                            <span>Docker</span>
+                            <span>yt-dlp</span>
+                            <span>FFmpeg</span>
                         </div>
 
-
                         <div class="project-links">
-
-                            <a
-                                href="[GITHUB LINK]"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                GitHub
+                            <a href="https://github.com/Krishang007/reelbridge" target="_blank"
+                                rel="noopener noreferrer">
+                                GitHub ↗
                             </a>
-
-                            <a
-                                href="[PROJECT / DEMO LINK]"
-                                target="_blank"
-                                rel="noreferrer"
-                            >
-                                View Project
-                            </a>
-
                         </div>
 
                     </div>
@@ -376,29 +476,209 @@
                 </article>
 
 
-                <!--
-                    COPY project-card
-                    FOR ADDITIONAL PROJECTS
-                -->
+                <!-- Digital Alarm Clock -->
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <span class="project-category">FPGA & Digital Design</span>
+
+                        <h3>Digital Alarm Clock — ENSC 252 Final Project</h3>
+
+                        <ul class="project-description">
+                            <li>
+                                Implemented a synchronous RTL design in VHDL using modular HDL architecture across 10
+                                source files, integrating sequential and combinational logic blocks into a structural
+                                top-level entity synthesized on the DE10-Lite FPGA.
+                            </li>
+                            <li>
+                                Authored the DigitalClockControl RTL block implementing a 3-state Moore FSM (Display
+                                Time → Set Time → Set Alarm) with registered state transitions, field-select/increment
+                                logic for HH:MM:SS, soft reset, and alarm comparison.
+                            </li>
+                            <li>
+                                Designed a PreScale clock divider reducing the 50 MHz system clock to ∼1.49 Hz via a
+                                25-bit ripple counter and MSB extraction, producing a 1 Hz synchronous tick for all
+                                downstream sequential logic.
+                            </li>
+                            <li>
+                                Verified RTL functionality of each submodule independently via ModelSim testbenches
+                                before integrating into the top-level netlist; validated post-synthesis behaviour
+                                through live board demonstration
+                            </li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>Digital Logic</span>
+                            <span>VHDL</span>
+                            <span>FPGA</span>
+                            <span>RTL</span>
+                            <span>ModelSim</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- AM Radio Receiver -->
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <span class="project-category">Signal Processing & RF</span>
+
+                        <h3>AM Radio Receiver — ENSC 220</h3>
+
+                        <ul class="project-description">
+                            <li>Assembled a functional AM radio receiver on a breadboard comprising an LC tank tuning
+                                circuit, germanium diode envelope detector, RC low-pass filter, and single-supply op-amp
+                                audio amplifier.</li>
+                            <li>
+                                Tuned the LC resonant circuit using a ferrite rod and variable capacitor to successfully
+                                receive 4 live AM broadcast stations, demonstrating practical understanding of
+                                resonance, impedance matching, and carrier selectivity.
+                            </li>
+                            <li>
+                                Developed hands-on intuition for analog signal processing from RF signal capture through
+                                demodulation to audio output, bridging theoretical circuit analysis with real-world
+                                analog design.
+                            </li>
+                        </ul>
+
+                        <p class="project-contributors">
+
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Analog Signal Processing</span>
+                            <span>Radio Frequency (RF)</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ESP32 Basketball Scoreboard -->
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <span class="project-category">Embedded Systems</span>
+
+                        <h3>ESP32 Basketball Scoreboard System</h3>
+
+                        <ul class="project-description">
+                            <li>Developed an ESP32-based real-time scoreboard in C++, implementing state-driven firmware
+                                and non-blocking timing using millis().</li>
+                            <li>
+                                Interfaced a 128×64 OLED over I2C, GPIO buttons, and a buzzer with software debouncing;
+                                debugged firmware using Serial logging and component-level hardware testing.
+                            </li>
+                            <li>
+                                Configured ESP32 Wi-Fi SoftAP with an HTTP interface for remote game configuration and
+                                real-time timer updates.
+                            </li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>Embedded Systems</span>
+                            <span>C</span>
+                            <span>ESP32</span>
+                            <span>I2C</span>
+                            <span>GPIO</span>
+                            <span>Wi-Fi</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Calculus Solver & Graphing Tool -->
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <span class="project-category">Numerical Computing</span>
+
+                        <h3>Calculus Solver & Graphing Tool</h3>
+
+                        <ul class="project-description">
+                            <li>Developed a Python script using the SymPy library to automate basic calculus tasks like
+                                differentiation and integration for user-defined functions.</li>
+                            <li>
+                                Built a visualization feature with Matplotlib that generates 2D plots of functions
+                                alongside their derivatives to help visually verify mathematical results
+                            </li>
+                            <li>
+                                Used NumPy to handle numerical ranges and coordinate arrays, ensuring smooth curves and
+                                accurate data points on every graph
+                            </li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>NumPy</span>
+                            <span>Numerical Analysis</span>
+                            <span>Python</span>
+                            <span>SymPy</span>
+                            <span>Matplotlib</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ELECTRO PEDIA! -->
+                <article class="project-card">
+
+                    <div class="project-content">
+
+                        <span class="project-category">Web Development & Electronics</span>
+
+                        <h3>ELECTRO PEDIA!</h3>
+
+                        <ul class="project-description">
+                            <li>
+                                Created a website dedicated to educating others about electronic components
+                            </li>
+                            <li>
+                                Gained experience in web development and content creation
+                            </li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>Electronics</span>
+                            <span>Markup Languages</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://electro-pedia.web.app/index.html" target="_blank"
+                                rel="noopener noreferrer">
+                                Live Site ↗
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
 
 
             </div>
 
         </section>
-
-
-
-        <!-- ========================================
+        <!--
+<!--
+ ========================================
              ACHIEVEMENTS
-        ========================================= -->
+        ========================================= 
 
-        <section
-            id="achievements"
-            class="section-wrap achievements-section"
-        >
+        <section id="achievements" class="section-wrap achievements-section">
 
             <div class="section-label">
-                <span>05</span>
+                <span>06</span>
                 Achievements
             </div>
 
@@ -406,7 +686,7 @@
             <div class="achievements-list">
 
 
-                <!-- ACHIEVEMENT -->
+                <!-- ACHIEVEMENT
                 <article class="achievement-item">
 
                     <span class="achievement-date">
@@ -428,7 +708,7 @@
                 </article>
 
 
-                <!-- ACHIEVEMENT -->
+                <!-- ACHIEVEMENT 
                 <article class="achievement-item">
 
                     <span class="achievement-date">
@@ -450,29 +730,25 @@
                 </article>
 
 
-                <!-- Add/remove achievement items as needed -->
+                <!-- Add/remove achievement items as needed 
 
 
             </div>
 
         </section>
-
-
+    -->
 
         <!-- ========================================
              CONTACT
         ========================================= -->
 
-        <section
-            id="contact"
-            class="section-wrap contact-section"
-        >
+        <section id="contact" class="section-wrap contact-section">
 
             <div class="section-label">
-                <span>06</span>
+                <span>05</span>
                 Contact
             </div>
-
+            <!--
 
             <div class="contact-content">
 
@@ -483,35 +759,21 @@
                 <p>
                     [CONTACT MESSAGE]
                 </p>
+            -->
 
-
-                <a
-                    class="contact-email"
-                    href="mailto:[YOUR EMAIL]"
-                >
-                    [YOUR EMAIL]
+            <div class="social-links">
+                <a href="mailto: krishangsarkar2007@gmail.com" target="_blank" rel="noreferrer">
+                    Email
+                </a>
+                <a href="https://github.com/Krishang007" target="_blank" rel="noreferrer">
+                    GitHub
                 </a>
 
+                <a href="https://www.linkedin.com/in/krishang-sarkar/" target="_blank" rel="noreferrer">
+                    LinkedIn
+                </a>
 
-                <div class="social-links">
-
-                    <a
-                        href="[GITHUB LINK]"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        GitHub
-                    </a>
-
-                    <a
-                        href="[LINKEDIN LINK]"
-                        target="_blank"
-                        rel="noreferrer"
-                    >
-                        LinkedIn
-                    </a>
-
-                </div>
+            </div>
 
             </div>
 

@@ -21,10 +21,16 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.12 });
-
-    document.querySelectorAll('.section-label, .about-grid, .section-heading, .project-card, .principles-grid, .contact-content').forEach((element) => {
-        element.classList.add('reveal');
-        observer.observe(element);
+    }, {
+        threshold: 0.12
     });
+
+    document
+        .querySelectorAll(
+            '.section-label, .about-grid, .section-heading, .project-card, .skills-grid, .experience-item, .achievement-item, .contact-content'
+        )
+        .forEach((element) => {
+            element.classList.add('reveal');
+            observer.observe(element);
+        });
 });
