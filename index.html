@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="[YOUR PORTFOLIO DESCRIPTION]">
+    <meta name="description" content="Krishang Sarkar — Computer Engineering student building embedded systems, software, and signal processing projects.">
 
     <title>Krishang Sarkar | Portfolio</title>
 
@@ -24,21 +24,24 @@
 
 
 <body>
+    <a class="skip-link" href="#home">Skip to content</a>
 
     <!-- ========================================
          NAVIGATION
     ========================================= -->
 
     <header class="site-header">
+        <a class="nav-brand" href="#home" aria-label="Krishang Sarkar home">&gt; krishang<span>_</span></a>
 
-        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-nav">
             <span></span>
             <span></span>
         </button>
 
-        <nav class="nav-links" aria-label="Main navigation">
+        <nav id="main-nav" class="nav-links" aria-label="Main navigation">
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
@@ -59,9 +62,9 @@
 
             <div class="home-content">
 
-                <p class="home-greeting">Hi, I'm</p>
+                <p class="home-greeting">Hello, world. I'm</p>
 
-                <h1 class="home-name">Krishang Sarkar</h1>
+                <h1 class="home-name">Krishang<br><span>Sarkar.</span></h1>
 
                 <div class="home-title">
                     <span>Computer Engineering Student</span>
@@ -80,6 +83,13 @@
                 </div>
 
             </div>
+<div class="hero-visual">
+                <div class="hero-photo"><img src="profile.png" alt="Portrait of Krishang Sarkar" width="652" height="460" fetchpriority="high"></div>
+                <div class="terminal-card">
+                    <div class="terminal-bar"><span aria-hidden="true">● ● ●</span><span>krishang / about.txt</span></div>
+                    <div class="terminal-body"><p><span>$</span> whoami</p><p>Computer Engineering @ SFU</p><p><span>$</span> interests</p><p>Embedded systems · Software<br>Analog electronics · Signal processing</p></div>
+                </div>
+            </div>
 
 
 
@@ -91,23 +101,13 @@
 
         <section id="about" class="section-wrap about-section">
 
-            <div class="section-label">
-                <span>02</span>
-                About
-            </div>
+            <h2 class="section-label"><span>02.</span> about<span class="heading-parens">()</span></h2>
 
             <div class="about-grid">
 
                 <div class="about-heading">
-                    <div class="about-pic">
-                        <img src="profile.png" alt="Profile">
-                    </div>
-                    <h1>
 
-                    </h1>
-
-                    <p class=" about-intro">
-                    </p>
+                    <h2>Curious about what happens<br><span class="highlight">under the hood.</span></h2>
 
                 </div>
 
@@ -136,200 +136,218 @@
      SKILLS
 ========================================= -->
 
-        <section id="skills" class="section-wrap skills-section">
-
-            <div class="section-label">
-                <span>03</span>
-                Skills
-            </div>
-
-            <div class="skills-grid">
-
-                <!-- Languages -->
-                <div class="skill-category">
-                    <h3>Languages</h3>
-
-                    <div class="tags">
-                        <span>C</span>
-                        <span>C++</span>
-                        <span>Python</span>
-                        <span>Java</span>
-                        <span>MATLAB</span>
-                        <span>C#</span>
-                        <span>JavaScript</span>
-                        <span>HTML/CSS</span>
-                        <span>VHDL</span>
-                        <span>Bash</span>
-                    </div>
+        <section id="education" class="section-wrap education-section">
+            <h2 class="section-label"><span>03.</span> education<span class="heading-parens">()</span></h2>
+            <article class="experience-item">
+                <div class="experience-meta"><span class="experience-date">Sept 2025 — Present</span><span class="experience-organization">Burnaby, BC</span></div>
+                <div class="experience-content"><h3>Simon Fraser University</h3>
+                    <p>Bachelor of Applied Science in Engineering Science (Computer Engineering)</p>
+                    <p><strong>Relevant coursework:</strong> Digital Logic, Electric Circuits, Signals and Systems, Data Structures and Programming, Graphical Communication for Engineering.</p>
                 </div>
-
-
-                <!-- Embedded & Hardware -->
-                <div class="skill-category">
-                    <h3>Embedded & Hardware</h3>
-
-                    <div class="tags">
-                        <span>ESP32</span>
-                        <span>ESP32-CAM</span>
-                        <span>Raspberry Pi</span>
-                        <span>Raspberry Pi Pico</span>
-                        <span>Arduino</span>
-                        <span>I2C</span>
-                        <span>SPI</span>
-                        <span>UART</span>
-                        <span>GPIO</span>
-                        <span>PWM</span>
-                        <span>ADC</span>
-                        <span>Wi-Fi SoftAP</span>
-                        <span>SMD Soldering</span>
-                        <span>Through-Hole Soldering</span>
-                    </div>
-                </div>
-
-
-                <!-- Web & Backend -->
-                <div class="skill-category">
-                    <h3>Web & Backend</h3>
-
-                    <div class="tags">
-                        <span>React</span>
-                        <span>Next.js</span>
-                        <span>FastAPI</span>
-                        <span>REST APIs</span>
-                        <span>HTTP</span>
-                        <span>GraphQL</span>
-                        <span>Apollo Client</span>
-                        <span>Faust.js</span>
-                        <span>WordPress</span>
-                        <span>Gutenberg</span>
-                        <span>Headless CMS</span>
-                    </div>
-                </div>
-
-
-                <!-- Signal & Image Processing -->
-                <div class="skill-category">
-                    <h3>Signal & Image Processing</h3>
-
-                    <div class="tags">
-                        <span>FFT</span>
-                        <span>DFT</span>
-                        <span>DCT</span>
-                        <span>Frequency Analysis</span>
-                        <span>Digital Filtering</span>
-                        <span>Interpolation</span>
-                        <span>Compression</span>
-                        <span>Signal Processing</span>
-                        <span>Image Processing</span>
-                    </div>
-                </div>
-
-
-                <!-- Libraries & Frameworks -->
-                <div class="skill-category">
-                    <h3>Libraries & Frameworks</h3>
-
-                    <div class="tags">
-                        <span>NumPy</span>
-                        <span>SciPy</span>
-                        <span>Pandas</span>
-                        <span>Matplotlib</span>
-                        <span>SymPy</span>
-                        <span>React</span>
-                        <span>Next.js</span>
-                        <span>FastAPI</span>
-                        <span>Apollo Client</span>
-                        <span>Faust.js</span>
-                    </div>
-                </div>
-
-
-                <!-- EDA & Simulation -->
-                <div class="skill-category">
-                    <h3>EDA & Simulation</h3>
-
-                    <div class="tags">
-                        <span>LTspice</span>
-                        <span>ngspice</span>
-                        <span>EAGLE</span>
-                        <span>ModelSim</span>
-                        <span>Quartus</span>
-                    </div>
-                </div>
-
-
-                <!-- Developer Tools -->
-                <div class="skill-category">
-                    <h3>Developer Tools</h3>
-
-                    <div class="tags">
-                        <span>Git</span>
-                        <span>GitHub</span>
-                        <span>Docker</span>
-                        <span>VS Code</span>
-                        <span>PlatformIO</span>
-                        <span>Arduino IDE</span>
-                        <span>IntelliJ IDEA</span>
-                        <span>PyCharm</span>
-                        <span>npm</span>
-                        <span>Jupyter Notebooks</span>
-                        <span>Jira</span>
-                        <span>Confluence</span>
-                        <span>GraphiQL</span>
-                        <span>LocalWP</span>
-                    </div>
-                </div>
-
-
-                <!-- Lab Equipment -->
-                <div class="skill-category">
-                    <h3>Lab Equipment</h3>
-
-                    <div class="tags">
-                        <span>Oscilloscope</span>
-                        <span>Digital Multimeter</span>
-                        <span>LCR Bridge</span>
-                        <span>DC Power Supply</span>
-                        <span>Breadboarding</span>
-                    </div>
-                </div>
-
-
-                <!-- Platforms & Systems -->
-                <div class="skill-category">
-                    <h3>Platforms & Systems</h3>
-
-                    <div class="tags">
-                        <span>Linux</span>
-                        <span>Linux CLI</span>
-                        <span>SSH</span>
-                        <span>Embedded Systems</span>
-                        <span>HTTP Servers</span>
-                        <span>Hardware/Software Interfacing</span>
-                        < </div>
-                    </div>
-
-
-                    <!-- Architecture & Methods -->
-                    <div class="skill-category">
-                        <h3>Architecture & Methods</h3>
-
-                        <div class="tags">
-                            <span>Real-Time Firmware Architecture</span>
-                            <span>State Machines</span>
-                            <span>Non-Blocking Timing</span>
-                            <span>Headless CMS Architecture</span>
-                            <span>Agile</span>
-                            <span>Scrum</span>
-                            <span>Kanban</span>
-                            <span>Serial Debugging</span>
-                            <span>Component-Level Testing</span>
-                        </div>
-                    </div>
-
-                </div>
-
+            </article>
         </section>
+
+        <!-- COMPLETE TECHNICAL SKILLS SECTION -->
+<section id="skills" class="section-wrap skills-section">
+  <div class="section-label">
+    <span>04</span> Technical Skills
+  </div>
+
+  <h2 class="skills-title">My Technical Toolbox</h2>
+  <p class="skills-intro">
+    A comprehensive overview of the programming languages, engineering
+    tools, platforms, technologies, and technical concepts I've worked with.
+  </p>
+
+  <div class="skills-grid">
+
+    <div class="skill-category">
+      <h3>Programming Languages</h3>
+      <div class="tags">
+        <span>C</span><span>C++</span><span>Python</span>
+        <span>Java</span><span>JavaScript</span><span>TypeScript</span>
+        <span>C#</span><span>SQL</span><span>MATLAB</span>
+        <span>VHDL</span><span>Verilog</span><span>Bash</span>
+        <span>HTML</span><span>CSS</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Microcontrollers & Embedded Platforms</h3>
+      <div class="tags">
+        <span>ESP32</span><span>ESP8266</span><span>ESP32-CAM</span>
+        <span>Raspberry Pi 4</span><span>Raspberry Pi Pico</span>
+        <span>Raspberry Pi Pico W</span><span>Arduino Uno</span>
+        <span>BBC micro:bit</span><span>DE10-Lite FPGA</span>
+        <span>Intel MAX 10</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Embedded Firmware & Interfaces</h3>
+      <div class="tags">
+        <span>Embedded C/C++</span><span>GPIO</span>
+        <span>I2C</span><span>SPI</span><span>UART</span>
+        <span>PWM</span><span>ADC</span><span>Interrupts</span>
+        <span>Timers</span><span>Finite-State Machines</span>
+        <span>Non-Blocking Timing</span><span>Debouncing</span>
+        <span>Serial Debugging</span><span>EEPROM</span>
+        <span>SD Card Interfacing</span><span>Wi-Fi SoftAP</span>
+        <span>HTTP Servers</span><span>Sensor Interfacing</span>
+        <span>SSD1306 OLED</span><span>GC9A01 TFT</span>
+        <span>Wireless Communication</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Digital Electronics, FPGA & ASIC Foundations</h3>
+      <div class="tags">
+        <span>Digital Logic Design</span><span>VHDL</span>
+        <span>FPGA Development</span><span>RTL Design</span>
+        <span>Combinational Logic</span><span>Sequential Logic</span>
+        <span>Flip-Flops</span><span>Counters</span>
+        <span>Registers</span><span>Multiplexers</span>
+        <span>Finite-State Machines</span><span>ALU Design</span>
+        <span>Testbenches</span><span>Functional Simulation</span>
+        <span>Timing Analysis Fundamentals</span>
+        <span>Logic Synthesis Fundamentals</span>
+        <span>Intel Quartus</span><span>ModelSim</span>
+        <span>GHDL</span><span>GTKWave</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Electronics, PCB & Laboratory</h3>
+      <div class="tags">
+        <span>Analog Electronics</span><span>Circuit Analysis</span>
+        <span>RC Circuits</span><span>RL Circuits</span>
+        <span>RLC Circuits</span><span>Passive Filters</span>
+        <span>Operational Amplifiers</span>
+        <span>Transistors</span><span>Diodes</span>
+        <span>LTspice</span><span>ngspice</span>
+        <span>Autodesk EAGLE</span><span>Schematic Capture</span>
+        <span>Circuit Simulation</span>
+        <span>Breadboarding</span><span>Oscilloscope</span>
+        <span>Digital Multimeter</span><span>LCR Bridge</span>
+        <span>DC Power Supply</span><span>SMD Soldering</span>
+        <span>Through-Hole Soldering</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Digital Signal Processing</h3>
+      <div class="tags">
+        <span>Continuous-Time Signals</span>
+        <span>Discrete-Time Signals</span>
+        <span>Convolution</span><span>Fourier Series</span>
+        <span>Fourier Transform</span><span>DFT</span>
+        <span>FFT</span><span>DCT</span>
+        <span>Frequency Analysis</span>
+        <span>Digital Filtering</span>
+        <span>Butterworth Filters</span>
+        <span>Chebyshev Type I Filters</span>
+        <span>Chebyshev Type II Filters</span>
+        <span>Bandpass Filters</span><span>Notch Filters</span>
+        <span>Zero-Phase Filtering</span>
+        <span>Power Spectral Density</span>
+        <span>Welch's Method</span>
+        <span>ECG Processing</span><span>QRS Detection</span>
+        <span>Pan-Tompkins Algorithm</span>
+        <span>Interpolation</span><span>Compression</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Computer Vision, AI & Data Science</h3>
+      <div class="tags">
+        <span>YOLOv8</span><span>OpenCV</span>
+        <span>Roboflow</span><span>Whisper</span>
+        <span>Gemini API</span><span>Depth Anything V2</span>
+        <span>Ollama</span><span>Qwen3</span>
+        <span>Computer Vision</span><span>Object Detection</span>
+        <span>Image Processing</span><span>Dataset Annotation</span>
+        <span>Data Augmentation</span><span>Model Fine-Tuning</span>
+        <span>mAP@50 Evaluation</span><span>Local LLM Inference</span>
+        <span>NumPy</span><span>Pandas</span><span>SciPy</span>
+        <span>Matplotlib</span><span>SymPy</span>
+        <span>wfdb</span><span>Data Visualization</span>
+        <span>Data Cleaning</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Frontend & Web Engineering</h3>
+      <div class="tags">
+        <span>HTML5</span><span>CSS3</span>
+        <span>JavaScript</span><span>TypeScript</span>
+        <span>React</span><span>Next.js</span>
+        <span>Tailwind CSS</span><span>Responsive Design</span>
+        <span>WordPress</span><span>Gutenberg</span>
+        <span>Faust.js</span><span>Apollo Client</span>
+        <span>GraphQL</span><span>Headless CMS</span>
+        <span>Component-Based Architecture</span>
+        <span>DOM Manipulation</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Backend, APIs & Databases</h3>
+      <div class="tags">
+        <span>FastAPI</span><span>Flask</span>
+        <span>Spring Boot</span><span>REST APIs</span>
+        <span>GraphQL APIs</span><span>HTTP</span>
+        <span>JSON</span><span>PostgreSQL</span>
+        <span>SQLite</span><span>SQL</span>
+        <span>Docker</span><span>FFmpeg</span>
+        <span>yt-dlp</span><span>API Integration</span>
+        <span>Client-Server Architecture</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Software Engineering & Testing</h3>
+      <div class="tags">
+        <span>Object-Oriented Programming</span>
+        <span>Data Structures</span><span>Algorithms</span>
+        <span>STL</span><span>Git</span><span>GitHub</span>
+        <span>Pull Requests</span><span>Code Reviews</span>
+        <span>Debugging</span><span>Functional Testing</span>
+        <span>Component-Level Testing</span>
+        <span>Technical Documentation</span>
+        <span>Agile</span><span>Scrum</span><span>Kanban</span>
+        <span>Jira</span><span>Confluence</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>CAD, Mechanical & Prototyping</h3>
+      <div class="tags">
+        <span>SOLIDWORKS</span><span>3D Part Modeling</span>
+        <span>Assembly Modeling</span><span>Assembly Mates</span>
+        <span>Engineering Drawings</span>
+        <span>Orthographic Views</span><span>Section Views</span>
+        <span>Detail Views</span><span>Isometric Views</span>
+        <span>Exploded Assemblies</span>
+        <span>Mechanical Prototyping</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Development Tools & Platforms</h3>
+      <div class="tags">
+        <span>Linux</span><span>Linux CLI</span><span>SSH</span>
+        <span>GitHub</span><span>Docker</span>
+        <span>VS Code</span><span>PlatformIO</span>
+        <span>Arduino IDE</span><span>IntelliJ IDEA</span>
+        <span>PyCharm</span><span>Jupyter Notebook</span>
+        <span>Postman</span><span>GraphiQL</span>
+        <span>LocalWP</span><span>Maven</span>
+        <span>npm</span><span>Microsoft Office</span>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -339,10 +357,7 @@
 
         <section id="experience" class="section-wrap experience-section">
 
-            <div class="section-label">
-                <span>04</span>
-                Experience
-            </div>
+            <h2 class="section-label"><span>05.</span> experience<span class="heading-parens">()</span></h2>
 
 
             <div class="experience-list">
@@ -354,11 +369,11 @@
                     <div class="experience-meta">
 
                         <span class="experience-date">
-                            [Feb-2026]
+                            Feb 2026 — Present
                         </span>
 
                         <span class="experience-organization">
-                            Blueprint
+                            SFU Blueprint
                         </span>
 
                     </div>
@@ -370,32 +385,11 @@
                             Software Developer
                         </h3>
 
-                        <p>
-                            Developing and maintaining nonprofit web platforms at SFU Blueprint
-                            using modern web technologies and headless CMS architecture.
-                        </p>
-
+                        <p>Contributing to the UBC School of Public Policy resource directory and the Reel Youth nonprofit website at SFU Blueprint.</p>
                         <ul>
-                            <li>
-                                Developed nonprofit web platforms using Next.js, Faust.js,
-                                Apollo Client, GraphQL, and WordPress in a headless CMS architecture.
-                            </li>
-
-                            <li>
-                                Implemented responsive UI components using React, CSS, and
-                                WordPress Gutenberg to improve cross-platform consistency.
-                            </li>
-
-                            <li>
-                                Debugged frontend workflows using LocalWP, analyzed component
-                                behavior, and collaborated through GitHub pull requests and
-                                Agile workflows.
-                            </li>
-
-                            <li>
-                                Built reusable Gutenberg components and evaluated plugin
-                                integrations to improve maintainability of client platforms.
-                            </li>
+                            <li>Developed the UBC resource-directory platform with WordPress, reusable Gutenberg components, LocalWP debugging, and third-party plugin evaluation.</li>
+                            <li>Implemented and refactored responsive mobile layouts, donation-page branding, carousel components, and navigation for Reel Youth using React, Next.js, GraphQL, and Apollo Client.</li>
+                            <li>Collaborated within an Agile team through GitHub pull requests, code reviews, and testing across shared client repositories.</li>
                         </ul>
 
                         <div class="tags">
@@ -430,17 +424,28 @@
 
         <section id="projects" class="section-wrap projects-section">
 
-            <div class="section-label">
-                <span>05</span>
-                Projects
-            </div>
+            <h2 class="section-label"><span>06.</span> projects<span class="heading-parens">()</span></h2>
 
-            <div class="projects-grid">
+<article class="project-card" id="nova-project">
+                    <div class="project-media nova-results"><span>NOVA / mAP@50 IMPROVEMENT</span>
+                        <dl class="metric-grid"><div><dt>Keys</dt><dd>+43<span>percentage points</span></dd></div><div><dt>Wallets</dt><dd>+35<span>percentage points</span></dd></div><div><dt>Phones</dt><dd>+99<span>percentage points</span></dd></div></dl>
+                    </div>
+                    <div class="project-content"><span class="project-category">Best AI Award · ProtoHacks 2026</span>
+                        <h3>NOVA</h3>
+                        <ul class="project-description">
+                            <li>Collected and organized custom image datasets for YOLOv8 fine-tuning, contributing to mAP@50 gains of 43, 35, and 99 percentage points for keys, wallets, and phones, respectively.</li>
+                            <li>Authored technical documentation covering object detection, Depth Anything V2 depth estimation, and Whisper speech recognition.</li>
+                            <li>Produced a technical demo video  of real-time object detection, obstacle awareness, and voice-guided assistance for visually impaired users.</li>
+                        </ul>
+                        <div class="project-tech"><span>Python</span><span>YOLOv8</span><span>OpenCV</span><span>Whisper</span><span>Flask</span></div>
+                    </div>
+                </article>
+
 
                 <!-- Kinetiq -->
                 <article class="project-card">
 
-                    <div class="project-content">
+                    <div class="project-media" aria-hidden="true"><span>RADIO / WEARABLE</span><svg viewBox="0 0 600 240"><rect x="75" y="65" width="110" height="110" rx="20"/><rect x="415" y="65" width="110" height="110" rx="20"/><path d="M215 120 H385 M270 95 L295 120 L270 145 M315 95 L340 120 L315 145"/></svg></div><div class="project-content">
 
                         <span class="project-category">
                             Embedded Systems / Wearable Technology
@@ -500,166 +505,12 @@
                     </div>
 
                 </article>
-                <!-- ReelBridge -->
-                <article class="project-card">
+                <!--ECG-->
 
-                    <div class="project-content">
+            <div class="projects-grid">
+<article class="project-card featured-project" id="ecg-project">
 
-                        <span class="project-category">Full-Stack Software</span>
-
-                        <h3>ReelBridge</h3>
-
-                        <ul class="project-description">
-                            <li>Built a full-stack application that converts Instagram Reel URLs into downloadable MP4
-                                files for sharing outside Instagram.</li>
-                            <li>Developed a React frontend and FastAPI backend, integrating yt-dlp and FFmpeg for media
-                                retrieval and processing.</li>
-                            <li>Containerized the application with Docker and redesigned the delivery architecture after
-                                identifying platform DM restrictions.</li>
-                        </ul>
-
-                        <div class="project-tech">
-                            <span>FastAPI</span>
-                            <span>React.js</span>
-                            <span>Docker</span>
-                            <span>yt-dlp</span>
-                            <span>FFmpeg</span>
-                        </div>
-
-                        <div class="project-links">
-                            <a href="https://github.com/Krishang007/reelbridge" target="_blank"
-                                rel="noopener noreferrer">
-                                GitHub ↗
-                            </a>
-                        </div>
-
-                    </div>
-
-                </article>
-
-                <!-- AKK-Jack -->
-                <article class="project-card">
-
-                    <div class="project-content">
-
-                        <span class="project-category">C++ Software</span>
-
-                        <h3>AKK-Jack</h3>
-
-                        <ul class="project-description">
-                            <li>
-                                Developed core game logic for a terminal-based Blackjack application in C++ using
-                                object-oriented design.
-                            </li>
-                            <li>
-                                Implemented modular Card, Deck, and Hand classes for card representation, deck
-                                generation,
-                                shuffling, dealing, and hand management.
-                            </li>
-                            <li>
-                                Built Blackjack evaluation logic for card values, bust detection, natural blackjack,
-                                split eligibility, and reusable hand-state operations.
-                            </li>
-                        </ul>
-
-                        <div class="project-tech">
-                            <span>C++</span>
-                            <span>OOP</span>
-                            <span>STL</span>
-                            <span>FTXUI</span>
-                            <span>Git</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-                <!-- Digital Alarm Clock -->
-                <article class="project-card">
-
-                    <div class="project-content">
-
-                        <span class="project-category">FPGA & Digital Design</span>
-
-                        <h3>Digital Alarm Clock — ENSC 252 Final Project</h3>
-
-                        <ul class="project-description">
-                            <li>
-                                Implemented a synchronous RTL design in VHDL using modular HDL architecture across 10
-                                source files, integrating sequential and combinational logic blocks into a structural
-                                top-level entity synthesized on the DE10-Lite FPGA.
-                            </li>
-                            <li>
-                                Authored the DigitalClockControl RTL block implementing a 3-state Moore FSM (Display
-                                Time → Set Time → Set Alarm) with registered state transitions, field-select/increment
-                                logic for HH:MM:SS, soft reset, and alarm comparison.
-                            </li>
-                            <li>
-                                Designed a PreScale clock divider reducing the 50 MHz system clock to ∼1.49 Hz via a
-                                25-bit ripple counter and MSB extraction, producing a 1 Hz synchronous tick for all
-                                downstream sequential logic.
-                            </li>
-                            <li>
-                                Verified RTL functionality of each submodule independently via ModelSim testbenches
-                                before integrating into the top-level netlist; validated post-synthesis behaviour
-                                through live board demonstration
-                            </li>
-                        </ul>
-
-                        <div class="project-tech">
-                            <span>Digital Logic</span>
-                            <span>VHDL</span>
-                            <span>FPGA</span>
-                            <span>RTL</span>
-                            <span>ModelSim</span>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- AM Radio Receiver -->
-                <article class="project-card">
-
-                    <div class="project-content">
-
-                        <span class="project-category">Signal Processing & RF</span>
-
-                        <h3>AM Radio Receiver — ENSC 220</h3>
-
-                        <ul class="project-description">
-                            <li>Assembled a functional AM radio receiver on a breadboard comprising an LC tank tuning
-                                circuit, germanium diode envelope detector, RC low-pass filter, and single-supply op-amp
-                                audio amplifier.</li>
-                            <li>
-                                Tuned the LC resonant circuit using a ferrite rod and variable capacitor to successfully
-                                receive 4 live AM broadcast stations, demonstrating practical understanding of
-                                resonance, impedance matching, and carrier selectivity.
-                            </li>
-                            <li>
-                                Developed hands-on intuition for analog signal processing from RF signal capture through
-                                demodulation to audio output, bridging theoretical circuit analysis with real-world
-                                analog design.
-                            </li>
-                        </ul>
-
-                        <p class="project-contributors">
-
-                        </p>
-
-                        <div class="project-tech">
-                            <span>Analog Signal Processing</span>
-                            <span>Radio Frequency (RF)</span>
-                        </div>
-
-                    </div>
-
-                </article>
-                <!-- ECG Signal Processing & QRS Detection -->
-                <article class="project-card">
-
-                    <div class="project-content">
+                    <div class="project-media"><span>FEATURED / ILLUSTRATIVE ECG</span><svg viewBox="0 0 600 240" fill="none" aria-hidden="true"><path class="ecg-line" d="M0 145 H50 Q65 145 75 130 Q85 115 95 145 H120 L135 165 L152 45 L171 202 L189 145 H220 Q245 95 270 145 H330 Q345 145 355 130 Q365 115 375 145 H400 L415 165 L432 45 L451 202 L469 145 H500 Q525 95 550 145 H600"/></svg><div class="pipeline">FILTER → DETECT → ANALYZE</div></div><div class="project-content">
 
                         <span class="project-category">Digital Signal Processing</span>
 
@@ -697,6 +548,172 @@
                     </div>
 
                 </article>
+                <!-- ReelBridge -->
+                <article class="project-card">
+
+                    <div class="project-media" aria-hidden="true"><span>MEDIA / PIPELINE</span><svg viewBox="0 0 600 240"><rect x="55" y="70" width="130" height="100" rx="8"/><path d="M105 95 L140 120 L105 145 Z M205 120 H260 M340 120 H395"/><rect x="270" y="85" width="60" height="70"/><rect x="415" y="70" width="130" height="100" rx="8"/></svg></div><div class="project-content">
+
+                        <span class="project-category">Full-Stack Software</span>
+
+                        <h3>ReelBridge</h3>
+
+                        <ul class="project-description">
+                            <li>Built a full-stack application that converts Instagram Reel URLs into downloadable MP4
+                                files for sharing outside Instagram.</li>
+                            <li>Developed a React frontend and FastAPI backend, integrating yt-dlp and FFmpeg for media
+                                retrieval and processing.</li>
+                            <li>Containerized the application with Docker and redesigned the delivery architecture after
+                                identifying platform DM restrictions.</li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>FastAPI</span>
+                            <span>React.js</span>
+                            <span>Docker</span>
+                            <span>yt-dlp</span>
+                            <span>FFmpeg</span>
+                        </div>
+
+                        <div class="project-links">
+                            <a href="https://github.com/Krishang007/reelbridge" target="_blank"
+                                rel="noopener noreferrer">
+                                GitHub ↗
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!--locallAI-->
+                <article class="project-card" id="local-ai-project">
+                    <div class="project-media"><span>LOCAL AI / SELF-HOSTED INFERENCE</span><svg viewBox="0 0 600 240" aria-hidden="true"><rect x="65" y="65" width="150" height="110" rx="12"/><path d="M215 120 H385 M360 105 L385 120 L360 135"/><rect x="385" y="65" width="150" height="110" rx="12"/><text x="140" y="112">FASTAPI</text><text x="140" y="138">HTTP</text><text x="460" y="112">OLLAMA</text><text x="460" y="138">QWEN3 1.7B</text></svg></div>
+                    <div class="project-content"><span class="project-category">AI Systems / Raspberry Pi</span><h3>Raspberry Pi Local AI Server</h3>
+                        <ul class="project-description"><li>Deployed Qwen3 1.7B on a 4 GB Raspberry Pi with Ollama to create a self-hosted LLM inference service.</li><li>Built a FastAPI REST backend exposing model inference over HTTP for integration with external applications.</li><li>Configured Linux, networking, the Python environment, and SSH-based remote development for an end-to-end prototype.</li></ul>
+                        <div class="project-tech"><span>Python</span><span>FastAPI</span><span>Ollama</span><span>Qwen3</span><span>Linux</span></div>
+                    </div>
+                </article>
+
+
+                <!-- AKK-Jack -->
+                <article class="project-card">
+
+                    <div class="project-media" aria-hidden="true"><span>C++ / GAME LOGIC</span><svg viewBox="0 0 600 240"><rect x="200" y="40" width="110" height="150" rx="10" transform="rotate(-12 255 115)"/><rect x="285" y="50" width="110" height="150" rx="10"/><path d="M340 90 L365 125 L340 160 L315 125 Z"/></svg></div><div class="project-content">
+
+                        <span class="project-category">C++ Software</span>
+
+                        <h3>AKK-Jack</h3>
+
+                        <ul class="project-description">
+                            <li>
+                                Developed core game logic for a terminal-based Blackjack application in C++ using
+                                object-oriented design.
+                            </li>
+                            <li>
+                                Implemented modular Card, Deck, and Hand classes for card representation, deck
+                                generation,
+                                shuffling, dealing, and hand management.
+                            </li>
+                            <li>
+                                Built Blackjack evaluation logic for card values, bust detection, natural blackjack,
+                                split eligibility, and reusable hand-state operations.
+                            </li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>OOP</span>
+                            <span>STL</span>
+                            <span>FTXUI</span>
+                            <span>Git</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <!-- Digital Alarm Clock -->
+                <article class="project-card">
+
+                    <div class="project-media" aria-hidden="true"><span>VHDL / STATE MACHINE</span><svg viewBox="0 0 600 240"><rect x="30" y="85" width="140" height="70" rx="35"/><rect x="230" y="85" width="140" height="70" rx="35"/><rect x="430" y="85" width="140" height="70" rx="35"/><path d="M170 120 H230 M370 120 H430 M500 85 V45 H100 V85"/><text x="100" y="126">DISPLAY</text><text x="300" y="126">SET TIME</text><text x="500" y="126">SET ALARM</text></svg></div><div class="project-content">
+
+                        <span class="project-category">FPGA & Digital Design</span>
+
+                        <h3>Digital Alarm Clock — ENSC 252 Final Project</h3>
+
+                        <ul class="project-description">
+                            <li>
+                                Implemented a synchronous RTL design in VHDL using modular HDL architecture across 10
+                                source files, integrating sequential and combinational logic blocks into a structural
+                                top-level entity synthesized on the DE10-Lite FPGA.
+                            </li>
+                            <li>
+                                Authored the DigitalClockControl RTL block implementing a 3-state Moore FSM (Display
+                                Time → Set Time → Set Alarm) with registered state transitions, field-select/increment
+                                logic for HH:MM:SS, soft reset, and alarm comparison.
+                            </li>
+                            <li>
+                                Implemented clock division within the modular VHDL design to support downstream timing and sequential logic.
+                            </li>
+                            <li>
+                                Verified RTL functionality of each submodule independently via ModelSim testbenches
+                                before integrating into the top-level netlist; validated post-synthesis behaviour
+                                through live board demonstration
+                            </li>
+                        </ul>
+
+                        <div class="project-tech">
+                            <span>Digital Logic</span>
+                            <span>VHDL</span>
+                            <span>FPGA</span>
+                            <span>RTL</span>
+                            <span>ModelSim</span>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- AM Radio Receiver -->
+                <article class="project-card">
+
+                    <div class="project-media" aria-hidden="true"><span>RF / ENVELOPE DETECTION</span><svg viewBox="0 0 600 240"><path d="M30 120 Q45 110 60 120 T90 120 T120 120 T150 120 T180 120 T210 120 T240 120 T270 120 T300 120 T330 120 T360 120 T390 120 T420 120 T450 120 T480 120 T510 120 T540 120 T570 120"/><path d="M30 100 Q165 10 300 100 T570 100 M30 140 Q165 230 300 140 T570 140"/></svg></div><div class="project-content">
+
+                        <span class="project-category">Signal Processing & RF</span>
+
+                        <h3>AM Radio Receiver — ENSC 220</h3>
+
+                        <ul class="project-description">
+                            <li>Assembled a functional AM radio receiver on a breadboard comprising an LC tank tuning
+                                circuit, germanium diode envelope detector, RC low-pass filter, and single-supply op-amp
+                                audio amplifier.</li>
+                            <li>
+                                Tuned the LC resonant circuit using a ferrite rod and variable capacitor to successfully
+                                receive 4 live AM broadcast stations, demonstrating practical understanding of
+                                resonance, impedance matching, and carrier selectivity.
+                            </li>
+                            <li>
+                                Developed hands-on intuition for analog signal processing from RF signal capture through
+                                demodulation to audio output, bridging theoretical circuit analysis with real-world
+                                analog design.
+                            </li>
+                        </ul>
+
+                        <p class="project-contributors">
+
+                        </p>
+
+                        <div class="project-tech">
+                            <span>Analog Signal Processing</span>
+                            <span>Radio Frequency (RF)</span>
+                        </div>
+
+                    </div>
+
+                </article>
+                <!-- ECG Signal Processing & QRS Detection -->
+
 
                 <!-- ESP32 Basketball Scoreboard -->
                 <article class="project-card">
@@ -769,7 +786,6 @@
                 </article>
 
 
-                <!-- ELECTRO PEDIA! -->
                 <article class="project-card">
 
                     <div class="project-content">
@@ -804,6 +820,7 @@
                 </article>
 
 
+
             </div>
 
         </section>
@@ -813,12 +830,10 @@
 
         <section id="achievements" class="section-wrap achievements-section">
 
-            <div class="section-label">
-                <span>06</span>
-                Achievements
-            </div>
+            <h2 class="section-label"><span>07.</span> achievements<span class="heading-parens">()</span></h2>
 
             <div class="achievements-list">
+                <div class="achievement-item"><div class="achievement-date">2026</div><div class="achievement-content"><h3>ProtoHacks 2026</h3><p class="achievement-title">Best AI Award — NOVA</p><p>Contributed custom datasets, technical documentation, and a demonstration of an AI-powered assistive vision system.</p><p><a class="achievement-project-link" href="#nova-project">Explore NOVA ↗</a></p></div></div>
 
 
                 <!-- FAS Competition -->
@@ -954,10 +969,7 @@
 
         <section id="contact" class="section-wrap contact-section">
 
-            <div class="section-label">
-                <span>07</span>
-                Contact
-            </div>
+            <h2 class="section-label"><span>08.</span> contact<span class="heading-parens">()</span></h2>
             <!--
 
             <div class="contact-content">
@@ -971,19 +983,18 @@
                 </p>
             -->
 
+            <p class="contact-heading">Let’s build something.</p><p class="contact-intro">Have a project in mind? I’d love to hear about it.</p>
             <div class="social-links">
-                <a href="mailto: krishangsarkar2007@gmail.com" target="_blank" rel="noreferrer">
+                <a href="mailto:krishangsarkar2007@gmail.com" target="_blank" rel="noreferrer">
                     Email
                 </a>
                 <a href="https://github.com/Krishang007" target="_blank" rel="noreferrer">
                     GitHub
                 </a>
 
-                <a href="https://www.linkedin.com/in/krishang-sarkar/" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/krishang-sarkar-837840266/" target="_blank" rel="noreferrer">
                     LinkedIn
                 </a>
-
-            </div>
 
             </div>
 
@@ -1004,7 +1015,7 @@
             © 2026 Krishang Sarkar
         </span>
 
-        <a href="#about">
+        <a href="#home">
             Back to top ↑
         </a>
 

@@ -14,6 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && nav?.classList.contains('open')) {
+            nav.classList.remove('open');
+            menuToggle?.setAttribute('aria-expanded', 'false');
+            menuToggle?.focus();
+        }
+    });
+
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -25,6 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
         threshold: 0.12
     });
 
+    document.documentElement.classList.add('reveal-ready');
     document
         .querySelectorAll(
             '.section-label, .about-grid, .section-heading, .project-card, .skills-grid, .experience-item, .achievement-item, .contact-content'
